@@ -1,4 +1,12 @@
+/** This is the main javascript code that is providing the functionality for this application.
+ * 
+ * @author Andreas
+ * 
+ */
 
+/** This provides the autosuggest-functionality. It is based on typeahead and bloodhound.
+ * 
+ */
 var geneAutosuggest = new Bloodhound({
 	datumTokenizer: Bloodhound.tokenizers.obj.whitespace('value'),
 	queryTokenizer: Bloodhound.tokenizers.whitespace,	
@@ -15,18 +23,23 @@ var geneAutosuggest = new Bloodhound({
 	}
 });
 
-
 geneAutosuggest.initialize();
 
+
+/** This is for the table display. The table is based on Datatables
+ * 
+ */
 $(function() {
 	
 	$('#genesTable').hide();
 	
-	$('#getgenenames').typeahead(null,{
-		name: 'geneAutosuggest',
+	$('#getgenenames').typeahead({
 		minLength: 2,
-		hint: false,
-		highlight: false,
+		hint: true,
+		highlight: true,
+	},{
+		name: 'getgenenames',
+		
 		maxItems: 20,
 		source: geneAutosuggest.ttAdapter(),				
 
@@ -50,13 +63,7 @@ function showVariationForGene(geneName){
 		table = $('#genesTable').DataTable( {
 			"ajax": {
 				"url": "/variation-service/rest/variation/variants/"+geneName,
-				dataSrc: function ( json ) {
-
-					console.log("dataSrc, processing data from server");
-					console.log(json);
-
-					return json.results;
-				} 
+				dataSrc: "results"
 
 			},			
 			"columns": [
@@ -85,8 +92,5 @@ function showVariationForGene(geneName){
 		table.ajax.url("/variation-service/rest/variation/variants/"+geneName).load();
 
 	}
-
-
-
 
 }
