@@ -60,13 +60,23 @@
 			</div>
 		</div>
 
-		<table id="table_id" class="display" cellspacing="0" width="100%">
+		<table id="genesTable" class="display" cellspacing="0" width="100%" >
 			<thead>
 				<tr>
 					<th>Gene</th>
 					<th>Nucleotide Change</th>
 					<th>Protein Change</th>
-
+					<th>Other Mappings</th>
+					<th>Alias</th>
+					<th>Transcripts</th>
+					<th>Region</th>
+					<th>Reported Classification</th>
+					<th>Inferred Classification</th>
+					<th>Source</th>					
+					<th>Last Evaluated</th>
+					<th>URL</th>
+					<th>Submitter</th>
+					<th>Comment</th>   
 				</tr>
 			</thead>
 
