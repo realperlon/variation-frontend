@@ -15,6 +15,7 @@ It is wrapped as a Java webapp, so it can be easily hosted together with the [va
 * Datatables (table implementation)
 
 ## Possible next steps:
+* Add testing of the web-frontend (e.g using [Cucumber](https://cucumber.io/) )
 * Allow to customize the displayed columns
 * Add some graphics, e.g. a view where on a chromosome a selected gene is located, like [karyotypeSVG](https://github.com/andreasprlic/karyotypeSVG)
 
