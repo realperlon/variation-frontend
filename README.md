@@ -14,3 +14,7 @@ Technology stack used:
 * Typeahead / Bloodhound (autosuggest)
 * Datatables (table implementation)
 
+Possible next steps:
+* allow to customize what columns are being shown
+* add some graphics, e.g. a view where a selected gene is located on a chromosome, like [karyotypeSVG](https://github.com/andreasprlic/karyotypeSVG)
+
