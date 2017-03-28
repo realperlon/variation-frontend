@@ -77,9 +77,8 @@ function showVariationForGene(geneName){
 			            {"data": "reportedClassification"},
 			            {"data": "inferredClassification"},
 			            {"data": "source"},
-			            {"data": "lastEvaluated"},
-			            {"data": "url"},
-			            {"data": "submitter"},
+			            {"data": "lastUpdated"},
+			            {"data": "url"},			            
 			            {"data": "comment"},
 			            ],	
 

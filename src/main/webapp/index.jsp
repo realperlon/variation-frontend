@@ -73,10 +73,9 @@
 					<th>Reported Classification</th>
 					<th>Inferred Classification</th>
 					<th>Source</th>					
-					<th>Last Evaluated</th>
-					<th>URL</th>
-					<th>Submitter</th>
-					<th>Comment</th>   
+					<th>Last Updated</th>
+					<th>URL</th>					
+					<th>Submitter Comment</th>   
 				</tr>
 			</thead>
 
